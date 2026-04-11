@@ -1,0 +1,175 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+
+  "logo": {
+        "type": "auto",
+    "source": "~/.config/fastfetch/image/image.png",
+    "height": 18,
+    "padding": { "top": 7, "right": 7 }
+  },
+
+  "display": {
+    "separator": " :  "
+  },
+
+  "modules": [
+    {
+      "type": "custom",
+      "format": "\u001b[31m  \u001b[33m  \u001b[32m  \u001b[36m  \u001b[34m  \u001b[35m  \u001b[90m  \u001b[91m  \u001b[92m  \u001b[93m  \u001b[94m  \u001b[95m  \u001b[96m  \u001b[31m  \u001b[33m  \u001b[32m  \u001b[36m  \u001b[34m  \u001b[35m  \u001b[90m"
+    },
+    "break",
+
+    {
+  "type": "title",
+  "key": "   \t\t\t",
+  "format": "{6}{7}{8}"
+},
+
+"break",
+
+{
+  "type": "custom",
+  "format": "\u001b[90m┌───────────────────────────────────────────────────────────────────┐"
+},
+
+{
+  "type": "os",
+  "key": "              \u001b[31m󰣇 OS",
+  "format": "{2}"
+},
+{
+  "type": "kernel",
+  "key": "              \u001b[31m Kernel",
+  "format": "{2}"
+},
+{
+  "type": "packages",
+  "key": "              \u001b[32m󰏗 Packages"
+},
+{
+  "type": "shell",
+  "key": "              \u001b[33m Shell"
+},
+
+{
+  "type": "custom",
+  "format": "\u001b[90m└───────────────────────────────────────────────────────────────────┘"
+},
+
+{
+  "type": "command",
+  "key": "\t\u001b[33m",
+  "text": "splash=$(hyprctl splash);echo $splash"
+},
+
+{
+  "type": "custom",
+  "format": "\u001b[90m┌───────────────────────────────────────────────────────────────────┐"
+},
+
+{
+  "type": "wm",
+  "key": "  \u001b[90m┌ \u001b[34m󱗃  UI/WM"
+},
+{
+  "type": "wmtheme",
+  "key": "  \u001b[90m│  ├ \u001b[34m󰉼"
+},
+{
+  "type": "icons",
+  "key": "  \u001b[90m│  ├ \u001b[34m󰀻"
+},
+{
+  "type": "cursor",
+  "key": "  \u001b[90m│  ├ \u001b[34m"
+},
+{
+  "type": "terminalfont",
+  "key": "  \u001b[90m│  ├ \u001b[34m"
+},
+{
+  "type": "terminal",
+  "key": "  \u001b[90m│  └ \u001b[34m"
+},
+
+{
+  "type": "chassis",
+  "key": "  \u001b[90m├ \u001b[32m󰌢  SYSTEM"
+},
+{
+  "type": "cpu",
+  "key": "  \u001b[90m│  ├ \u001b[32m CPU"
+},
+{
+  "type": "gpu",
+  "key": "  \u001b[90m│  ├ \u001b[32m󰊴 GPU",
+  "format": "{2}"
+},
+{
+  "type": "gpu",
+  "key": "  \u001b[90m│  ├ \u001b[35m GPU Driver",
+  "format": "{3}"
+},
+{
+  "type": "display",
+  "key": "  \u001b[90m│  ├ \u001b[32m󰍹 Display",
+  "format": "{1}x{2} @ {3}Hz [{7}]"
+},
+{
+  "type": "memory",
+  "key": "  \u001b[90m│  ├ \u001b[32m󰾆 RAM"
+},
+{
+  "type": "swap",
+  "key": "  \u001b[90m│  ├ \u001b[32m󰓡 SWAP"
+},
+{
+  "type": "battery",
+  "key": "  \u001b[90m│  ├ \u001b[32m󰁹 BATT"
+},
+{
+  "type": "disk",
+  "key": "  \u001b[90m│  ├ \u001b[32m󰋊 DISK"
+},
+{
+  "type": "command",
+  "key": "  \u001b[90m│  ├ \u001b[31m󱦟 OS Age ",
+  "text": "birth_install=$(stat -c %W /); current=$(date +%s); time_progression=$((current - birth_install)); days_difference=$((time_progression / 86400)); echo $days_difference days"
+},
+{
+  "type": "uptime",
+  "key": "  \u001b[90m│  ├ \u001b[31m󱫐 Uptime "
+},
+
+{
+  "type": "sound",
+  "key": "  \u001b[90m├ \u001b[35m  AUDIO",
+  "format": "{2}"
+},
+{
+  "type": "player",
+  "key": "  \u001b[90m│  ├ \u001b[35m󰥠"
+},
+{
+  "type": "media",
+  "key": "  \u001b[90m│  └ \u001b[35m󰝚"
+},
+
+{
+  "type": "wifi",
+  "key": "  \u001b[90m└ \u001b[36m󰤨  NETWORK"
+},
+
+    {
+      "type": "custom",
+      "format": "\u001b[90m└───────────────────────────────────────────────────────────────────┘"
+    },
+
+    {
+      "type": "custom",
+      "format": "\u001b[31m  \u001b[33m  \u001b[32m  \u001b[36m  \u001b[34m  \u001b[35m  \u001b[90m  \u001b[91m  \u001b[92m  \u001b[93m  \u001b[94m  \u001b[95m  \u001b[96m  \u001b[31m  \u001b[33m  \u001b[32m  \u001b[36m  \u001b[34m  \u001b[35m  \u001b[90m"
+    },
+
+    "break"
+  ]
+}

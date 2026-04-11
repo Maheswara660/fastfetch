@@ -1,0 +1,15 @@
+# System files
+.DS_Store
+Thumbs.db
+
+# Temporary/Backup files
+*.txt
+*.pyc
+__pycache__/
+
+# Project Specific
+.antigravity/
+.gemini/
+mapping.txt
+standardize_presets.py
+EOF

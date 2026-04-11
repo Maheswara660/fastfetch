@@ -1,0 +1,71 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+  "logo": {
+    "source": "~/.config/fastfetch/image/image.png",
+    "type": "auto",
+    "height": 10,
+    "width": 20,
+    "padding": {
+      "top": 1
+    }
+  },
+  "display": {
+    "separator": " -> "
+  },
+  "modules": [
+    "break",
+    {
+      "type": "custom",
+      "format": "\u001b[36m-------------->\u001b[37m👹うちはの幽霊\u001b[36m<--------------"
+    },
+    {
+      "type": "custom",
+      "format": "\u001b[31m╔════════════\u001b[37m════[\u001b[31mɴ\u001b[33mᴏ\u001b[32m \u001b[36mᴍ\u001b[34mᴇ\u001b[35mʀ\u001b[31mᴄ\u001b[33mʏ\u001b[0m]════\u001b[32m═════════════╗"
+    },
+    {
+      "type": "kernel",
+      "key": " ",
+      "keyColor": "blue"
+    },
+    {
+      "type": "wm",
+      "key": " ",
+      "keyColor": "cyan"
+    },
+    {
+      "type": "shell",
+      "key": " ",
+      "keyColor": "green"
+    },
+    {
+      "type": "packages",
+      "key": " ",
+      "keyColor": "yellow"
+    },
+    {
+      "type": "terminal",
+      "key": " ",
+      "keyColor": "magenta"
+    },
+    {
+      "type": "memory",
+      "key": "󰍛 ",
+      "keyColor": "red",
+      "format": "{1} / {2}"
+    },
+    {
+      "type": "uptime",
+      "key": "󰔛 ",
+      "keyColor": "green"
+    },
+    {
+      "type": "custom",
+      "format": "\u001b[31m╚══════════════\u001b[37m══════\u001b[34m☣️\u001b[37m══════\u001b[32m═══════════════╝"
+    },
+    {
+      "type": "custom",
+      "format": "   \u001b[31m    \u001b[32m    \u001b[33m     \u001b[34m    \u001b[35m    \u001b[36m    \u001b[37m    \u001b[90m "
+    },
+    "break"
+  ]
+}
